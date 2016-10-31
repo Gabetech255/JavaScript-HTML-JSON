@@ -17,8 +17,6 @@ console.log("Your age is " + userAge);
 //this particular line changes the value of userName to only the first 3 letters of the name
 userName = userName.substring(0,3);
 
-
-
 //if-else combined with confirm and prompt
 if (confirm("would you like to start the second part of the program?") === true){
   var myName = prompt("What is your name?");
