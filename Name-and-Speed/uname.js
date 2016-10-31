@@ -10,10 +10,8 @@ var userAge = prompt("What is your age?"); //ints do not have to be in quotation
 
 
 //the console.log function prints to screen 
-console.log("So your name is:");
-console.log(userName);
-console.log("Your age is");
-console.log(userAge);
+console.log("So your name is " + userName);
+console.log("Your age is " + userAge);
 
 //.subtring searches a string for a specific slot in memory
 //this particular line changes the value of userName to only the first 3 letters of the name
