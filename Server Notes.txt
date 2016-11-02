@@ -1,0 +1,24 @@
+main working directory for all the content is /var/www/
+PHP directory index is in /etc/apache2/mods-enabled/dir.conf
+
+Quick reinstallation guide:
+  1. insall Apache server
+    - sudo apt-get install apache2
+  
+  2. install mySQL
+    - sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+    - sudo mysql_install_db
+    - sudo /usr/bin/mysql_secure_installation
+  
+  3. install PHP 
+    - sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+    - sudo nano /etc/apache2/mods-enabled/dir.conf
+      ** add php mod
+        -- apt-cache search php5-   //lists all the different mods available
+        -- sudo apt-get install nameofmod
+     -sudo nano /var/www/info.php
+        -- <?php
+            phpinfo();
+            ?>
+   4. sudo service apache2 restart
+      
